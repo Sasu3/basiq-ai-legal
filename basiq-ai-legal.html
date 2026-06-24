@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BASIQ AI — Legal</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700;900&family=Inter:wght@300;400;500&display=swap');
+
+    :root {
+      --gold: #C4A45A;
+      --gold-light: #D4B870;
+      --black: #0a0a0a;
+      --dark: #111;
+      --text: #e0d5c0;
+      --dim: #888;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--black);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(180deg, #111 0%, #0a0a0a 100%);
+      border-bottom: 1px solid #2a2316;
+      padding: 28px 24px 20px;
+      text-align: center;
+    }
+
+    .brand {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 32px;
+      font-weight: 900;
+      background: linear-gradient(160deg, #f5d060, #C4A45A, #8b6914);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: 1px;
+    }
+
+    .brand-sub {
+      font-size: 11px;
+      color: var(--dim);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      padding: 16px 24px;
+      border-bottom: 1px solid #1a1a1a;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--dim);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: 1px solid #222;
+      transition: all 0.2s;
+    }
+
+    nav a:hover, nav a.active {
+      color: var(--gold);
+      border-color: var(--gold);
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    .section {
+      display: none;
+    }
+
+    .section.active {
+      display: block;
+    }
+
+    h2 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+
+    .updated {
+      font-size: 12px;
+      color: var(--dim);
+      margin-bottom: 32px;
+    }
+
+    h3 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--gold-light);
+      margin: 28px 0 8px;
+      letter-spacing: 0.5px;
+    }
+
+    p {
+      color: #b0a890;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      color: #b0a890;
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #1e1a12;
+      margin: 32px 0;
+    }
+
+    .contact-card {
+      background: #111;
+      border: 1px solid #2a2316;
+      border-radius: 14px;
+      padding: 20px;
+      margin-top: 24px;
+    }
+
+    .contact-card .label {
+      font-size: 11px;
+      color: var(--dim);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 12px;
+    }
+
+    .contact-row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 8px;
+      font-size: 14px;
+      color: var(--text);
+    }
+
+    .contact-row span:first-child {
+      color: var(--gold);
+      width: 20px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 12px;
+      color: var(--dim);
+      border-top: 1px solid #1a1a1a;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="brand">BASIQ AI</div>
+  <div class="brand-sub">AutoScan 360 · Legal Information</div>
+</header>
+
+<nav>
+  <a href="#" class="active" onclick="show('privacy', this)">Privacy Policy</a>
+  <a href="#" onclick="show('terms', this)">Terms of Service</a>
+  <a href="#" onclick="show('about', this)">About</a>
+</nav>
+
+<div class="container">
+
+  <!-- PRIVACY POLICY -->
+  <div class="section active" id="privacy">
+    <h2>Privacy Policy</h2>
+    <div class="updated">Last updated: June 24, 2026</div>
+
+    <p>Baseek AI Auto Tec International Limited ("BASIQ AI", "we", "us", or "our") operates the BASIQ AI AutoScan 360 mobile application. This policy explains what data we collect, how we use it, and your rights.</p>
+
+    <h3>1. Information We Collect</h3>
+    <ul>
+      <li><strong>Vehicle Data:</strong> OBD diagnostics including RPM, speed, coolant temperature, and battery voltage collected via Bluetooth from your vehicle's OBD-II port.</li>
+      <li><strong>Photos and Videos:</strong> Images and video you capture or select for vehicle inspection analysis.</li>
+      <li><strong>Payment Information:</strong> M-Pesa phone number used to process payment for PDF reports. We do not store card numbers or full payment details.</li>
+      <li><strong>Device Information:</strong> Basic device identifiers for app functionality and crash reporting.</li>
+    </ul>
+
+    <h3>2. How We Use Your Data</h3>
+    <ul>
+      <li>To analyze your vehicle's condition using AI and generate a PDF health report.</li>
+      <li>To process M-Pesa payments for report generation.</li>
+      <li>To improve the accuracy of our vehicle diagnostics engine.</li>
+      <li>We do not sell your data to third parties.</li>
+    </ul>
+
+    <h3>3. Data Storage</h3>
+    <p>Vehicle scan data and media are uploaded to secure servers hosted on AWS (Amazon Web Services) in the EU (Stockholm) region. Data is retained for 90 days after report generation and then permanently deleted.</p>
+
+    <h3>4. Bluetooth Access</h3>
+    <p>The app uses Bluetooth Low Energy (BLE) to connect to the BASIQ AI-OBD device. Bluetooth is only activated when you tap "OBD Connection" and is not used for tracking or location purposes.</p>
+
+    <h3>5. Camera and Photo Library</h3>
+    <p>The app requests access to your camera and photo library solely to capture vehicle inspection images. These are only uploaded when you initiate a scan.</p>
+
+    <h3>6. Your Rights</h3>
+    <p>You may request deletion of your data at any time by contacting us at info@basiqai.com. We will process all deletion requests within 14 days.</p>
+
+    <h3>7. Children's Privacy</h3>
+    <p>BASIQ AI AutoScan 360 is not directed at children under 13. We do not knowingly collect data from children.</p>
+
+    <h3>8. Changes to This Policy</h3>
+    <p>We may update this policy periodically. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+    <h3>9. Contact</h3>
+    <div class="contact-card">
+      <div class="label">Data Controller</div>
+      <div class="contact-row"><span>🏢</span> Baseek AI Auto Tec International Limited</div>
+      <div class="contact-row"><span>📍</span> TSS Towers, 9th Floor, Nkurumah Road, Mombasa, Kenya</div>
+      <div class="contact-row"><span>✉️</span> info@basiqai.com</div>
+      <div class="contact-row"><span>📞</span> +254 722 302 184</div>
+    </div>
+  </div>
+
+  <!-- TERMS OF SERVICE -->
+  <div class="section" id="terms">
+    <h2>Terms of Service</h2>
+    <div class="updated">Last updated: June 24, 2026</div>
+
+    <p>By downloading or using BASIQ AI AutoScan 360, you agree to these Terms. Please read them carefully.</p>
+
+    <h3>1. Service Description</h3>
+    <p>BASIQ AI AutoScan 360 is a vehicle health inspection tool that uses AI to analyze OBD diagnostics, photos, and video captured by the user, and generates a PDF health report upon payment.</p>
+
+    <h3>2. Use of the Service</h3>
+    <ul>
+      <li>You must be 18 years or older to use this service.</li>
+      <li>You are responsible for ensuring the vehicle being scanned belongs to you or that you have the owner's permission.</li>
+      <li>The app is intended for informational purposes. BASIQ AI reports are not a substitute for professional mechanical inspection.</li>
+    </ul>
+
+    <h3>3. Payments</h3>
+    <ul>
+      <li>Payment is processed via M-Pesa STK Push.</li>
+      <li>Fees are charged per scan report as displayed in the app at time of payment.</li>
+      <li>Payments are non-refundable once the PDF report has been generated and delivered.</li>
+    </ul>
+
+    <h3>4. Limitation of Liability</h3>
+    <p>BASIQ AI provides vehicle health reports for informational purposes only. We are not liable for any mechanical failures, accidents, or losses that occur after or as a result of using our service. Always consult a qualified mechanic for critical vehicle decisions.</p>
+
+    <h3>5. Intellectual Property</h3>
+    <p>All content, design, AI models, and software within BASIQ AI AutoScan 360 are the property of Baseek AI Auto Tec International Limited. Unauthorized reproduction is prohibited.</p>
+
+    <h3>6. Termination</h3>
+    <p>We reserve the right to suspend or terminate access to the app for users who violate these Terms or misuse the service.</p>
+
+    <h3>7. Governing Law</h3>
+    <p>These Terms are governed by the laws of the Republic of Kenya. Any disputes shall be resolved in the courts of Mombasa County, Kenya.</p>
+
+    <h3>8. Contact</h3>
+    <div class="contact-card">
+      <div class="label">Legal Enquiries</div>
+      <div class="contact-row"><span>🏢</span> Baseek AI Auto Tec International Limited</div>
+      <div class="contact-row"><span>✉️</span> info@basiqai.com</div>
+      <div class="contact-row"><span>📞</span> +254 722 302 184</div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="section" id="about">
+    <h2>About BASIQ AI</h2>
+    <div class="updated">Version 1.0 · Built in Kenya for Africa</div>
+
+    <p>BASIQ AI AutoScan 360 is Africa's first AI-powered vehicle health inspection app, designed for car buyers, sellers, and fleet operators across Kenya and beyond.</p>
+
+    <h3>Company</h3>
+    <div class="contact-card">
+      <div class="label">Registered Entity</div>
+      <div class="contact-row"><span>🏢</span> Baseek AI Auto Tec International Limited</div>
+      <div class="contact-row"><span>📍</span> TSS Towers, 9th Floor, Nkurumah Road, Mombasa, Kenya</div>
+      <div class="contact-row"><span>🔢</span> D-U-N-S: 369976429</div>
+      <div class="contact-row"><span>✉️</span> info@basiqai.com</div>
+      <div class="contact-row"><span>📞</span> +254 722 302 184</div>
+      <div class="contact-row"><span>🌐</span> basiqai.com</div>
+    </div>
+
+    <h3>Mission</h3>
+    <p>To bring transparency and trust to vehicle transactions across Africa through accessible AI technology — so every buyer drives with confidence and every seller proves their vehicle's worth.</p>
+
+    <hr class="divider"/>
+    <p style="font-size:12px;color:#555;text-align:center;">BASIQ AI · AutoScan 360 · © 2026 Baseek AI Auto Tec International Limited</p>
+  </div>
+
+</div>
+
+<footer>
+  BASIQ AI · Baseek AI Auto Tec International Limited · Mombasa, Kenya
+</footer>
+
+<script>
+  function show(id, el) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    el.classList.add('active');
+    return false;
+  }
+</script>
+
+</body>
+</html>
