@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BASIQ AI — Support</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700;900&family=Inter:wght@300;400;500&display=swap');
+
+    :root {
+      --gold: #C4A45A;
+      --gold-light: #D4B870;
+      --black: #0a0a0a;
+      --dark: #111;
+      --text: #e0d5c0;
+      --dim: #888;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--black);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #0f0f0f;
+      border-bottom: 1px solid #2a2316;
+      padding: 28px 24px 20px;
+      text-align: center;
+    }
+
+    .brand {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 32px;
+      font-weight: 900;
+      background: linear-gradient(160deg, #f5d060, #C4A45A, #8b6914);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: 1px;
+    }
+
+    .brand-sub {
+      font-size: 11px;
+      color: var(--dim);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    h2 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--gold);
+      margin-bottom: 6px;
+      margin-top: 32px;
+    }
+
+    h3 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--gold-light);
+      margin: 20px 0 6px;
+    }
+
+    p {
+      color: #b0a890;
+      margin-bottom: 10px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 32px 0 24px;
+      border-bottom: 1px solid #1e1a12;
+      margin-bottom: 32px;
+    }
+
+    .hero-title {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+
+    .hero-sub {
+      font-size: 14px;
+      color: var(--dim);
+    }
+
+    .contact-card {
+      background: #111;
+      border: 1px solid #2a2316;
+      border-radius: 16px;
+      padding: 24px;
+      margin: 24px 0;
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+      font-size: 14px;
+      color: var(--text);
+    }
+
+    .contact-row:last-child { margin-bottom: 0; }
+
+    .contact-row .icon {
+      width: 36px;
+      height: 36px;
+      background: rgba(196,164,90,0.1);
+      border: 1px solid rgba(196,164,90,0.3);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .contact-row a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    .contact-row a:hover { text-decoration: underline; }
+
+    .faq-item {
+      background: #111;
+      border: 1px solid #1c1c1c;
+      border-radius: 12px;
+      padding: 16px 18px;
+      margin-bottom: 10px;
+    }
+
+    .faq-q {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--gold-light);
+      margin-bottom: 6px;
+    }
+
+    .faq-a {
+      font-size: 13px;
+      color: #888;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .steps {
+      counter-reset: steps;
+      list-style: none;
+      padding: 0;
+      margin: 12px 0;
+    }
+
+    .steps li {
+      counter-increment: steps;
+      display: flex;
+      gap: 12px;
+      margin-bottom: 10px;
+      font-size: 13px;
+      color: #b0a890;
+    }
+
+    .steps li::before {
+      content: counter(steps);
+      width: 24px;
+      height: 24px;
+      background: rgba(196,164,90,0.15);
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--gold);
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(196,164,90,0.1);
+      border: 1px solid rgba(196,164,90,0.3);
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-size: 11px;
+      color: var(--gold);
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 12px;
+      color: var(--dim);
+      border-top: 1px solid #1a1a1a;
+    }
+
+    footer a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="brand">BASIQ AI</div>
+  <div class="brand-sub">AutoScan 360 · Customer Support</div>
+</header>
+
+<div class="container">
+
+  <div class="hero">
+    <div class="badge">24/7 SUPPORT</div>
+    <div class="hero-title">How Can We Help You?</div>
+    <p class="hero-sub">We're here to help you get the most out of BASIQ AI AutoScan 360.</p>
+  </div>
+
+  <!-- CONTACT -->
+  <h2>Contact Us</h2>
+  <p>Reach us directly — we respond within 24 hours on business days.</p>
+
+  <div class="contact-card">
+    <div class="contact-row">
+      <div class="icon">✉️</div>
+      <div>
+        <div style="font-size:11px;color:var(--dim);margin-bottom:2px">EMAIL SUPPORT</div>
+        <a href="mailto:info@basiqai.com">info@basiqai.com</a>
+      </div>
+    </div>
+    <div class="contact-row">
+      <div class="icon">📞</div>
+      <div>
+        <div style="font-size:11px;color:var(--dim);margin-bottom:2px">PHONE / WHATSAPP</div>
+        <a href="tel:+254722302184">+254 722 302 184</a>
+      </div>
+    </div>
+    <div class="contact-row">
+      <div class="icon">📍</div>
+      <div>
+        <div style="font-size:11px;color:var(--dim);margin-bottom:2px">OFFICE</div>
+        TSS Towers, 9th Floor, Nkurumah Road, Mombasa, Kenya
+      </div>
+    </div>
+    <div class="contact-row">
+      <div class="icon">🕐</div>
+      <div>
+        <div style="font-size:11px;color:var(--dim);margin-bottom:2px">SUPPORT HOURS</div>
+        Monday – Saturday, 8:00 AM – 8:00 PM EAT
+      </div>
+    </div>
+  </div>
+
+  <!-- HOW THE APP WORKS -->
+  <h2>How BASIQ AI Works</h2>
+  <p>BASIQ AI AutoScan 360 is a fully automated vehicle health inspection app. Here is the step-by-step process:</p>
+
+  <ol class="steps">
+    <li>Purchase the BASIQ AI-OBD device and plug it into your car's OBD-II port (under the dashboard, driver side)</li>
+    <li>Open the BASIQ AI app and tap <strong>OBD Connection</strong> to connect via Bluetooth</li>
+    <li>Take up to 10 photos and/or a video of the vehicle using your phone camera</li>
+    <li>Tap <strong>Data Upload</strong> to send all collected data securely to our servers</li>
+    <li>Tap <strong>Data Analyze</strong> to start the AI analysis</li>
+    <li>Pay via M-Pesa to unlock your PDF vehicle health report</li>
+    <li>Your report is delivered instantly to your phone</li>
+  </ol>
+
+  <!-- FAQ -->
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <div class="faq-q">Where do I find the OBD-II port in my car?</div>
+    <p class="faq-a">The OBD-II port is located under the dashboard on the driver's side, usually near the steering column. It is a 16-pin trapezoid-shaped connector.</p>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Does the engine need to be running during the scan?</div>
+    <p class="faq-a">For a full report including live engine data (RPM, temperature, voltage), the engine should be running. With engine off (key to ACC/ON position), the app can still collect stored fault codes, VIN, make, model, year, and mileage.</p>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">How long does a full inspection take?</div>
+    <p class="faq-a">A complete inspection — OBD data collection, photos, video, upload, and AI analysis — takes under 10 minutes from start to report delivery.</p>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">What does the report contain?</div>
+    <p class="faq-a">The report contains vehicle identity (plate, VIN, make, model, year, mileage), engine diagnostics (fault codes decoded in plain language, RPM, temperature, voltage), and visual findings (damage, paint condition, glass, tyres) — all stated neutrally as observed. BASIQ AI does not grade, score, or recommend.</p>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">How do I pay for my report?</div>
+    <p class="faq-a">Payment is processed via M-Pesa. After analysis is complete, tap Pay to Unlock PDF and enter your M-Pesa phone number. An STK push will be sent to your phone to confirm payment.</p>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Can I get a refund?</div>
+    <p class="faq-a">Payments are non-refundable once the PDF report has been generated and delivered. If you did not receive your report after payment, contact us immediately at info@basiqai.com and we will resolve it within 24 hours.</p>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Is my data safe?</div>
+    <p class="faq-a">All data is transmitted using encrypted HTTPS and stored on secure AWS servers in the EU region. Data is deleted from our servers 90 days after report delivery. We do not sell your data to any third party.</p>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">What is BASIQ AI's role in the inspection?</div>
+    <p class="faq-a">BASIQ AI is a neutral evidence company. We report only what is visible and detectable at the time of inspection. We do not grade, value, recommend whether to buy or sell, or draw any conclusions. All findings are presented as facts for you to decide.</p>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">My OBD device is not connecting. What do I do?</div>
+    <p class="faq-a">Make sure the BASIQ AI-OBD device is fully plugged into the OBD-II port and the indicator light is on. Ensure Bluetooth is enabled on your phone. Close and reopen the app and try scanning again. If the issue persists, contact us at info@basiqai.com.</p>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Can I use the app without the OBD device?</div>
+    <p class="faq-a">Yes. You can perform a visual-only inspection using photos and video without the OBD device. The report will contain visual findings only. Engine diagnostics require the BASIQ AI-OBD device.</p>
+  </div>
+
+  <!-- LEGAL LINKS -->
+  <h2>Legal</h2>
+  <div class="contact-card">
+    <div class="contact-row">
+      <div class="icon">📄</div>
+      <div>
+        <a href="https://sasu3.github.io/basiq-ai-legal/basiq-ai-legal.html">Privacy Policy & Terms of Service →</a>
+      </div>
+    </div>
+    <div class="contact-row">
+      <div class="icon">🏢</div>
+      <div>Baseek AI Auto Tec International Limited · D-U-N-S: 369976429</div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  BASIQ AI AutoScan 360 · © 2026 Baseek AI Auto Tec International Limited · Mombasa, Kenya<br>
+  <a href="https://sasu3.github.io/basiq-ai-legal/basiq-ai-legal.html">Privacy Policy</a> · 
+  <a href="mailto:info@basiqai.com">info@basiqai.com</a>
+</footer>
+
+</body>
+</html>
